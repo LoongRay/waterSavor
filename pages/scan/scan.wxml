@@ -1,0 +1,9 @@
+<view class="container">
+  <image class="bg_img" src="../../imgs/images/saoma1.png"></image>
+  <view class="title">解析设备标识码</view>
+  <view class="tips">扫描设备上的工业互联网标识码查看设备信息</view>
+  <view class="btn">
+    <image src="../../imgs/images/saoma.png"></image>
+    <view class="btn_txt">开始扫码</view>
+  </view>
+</view>

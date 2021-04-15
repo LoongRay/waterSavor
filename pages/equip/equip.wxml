@@ -1,0 +1,14 @@
+<!--pages/equip/equip.wxml-->
+<view class="equip_category">
+  <block wx:for="{{category}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+    <view data-categ="{{item.categ_id}}" catchtap="tolist">
+      <view class="category_item">
+      <view class="item_count">
+        <view class="count_num">{{item.count_num}}</view>
+        <view class="count_title">设备台数</view>
+      </view>
+      <view class="category_title">{{item.category_title}}</view>
+    </view>
+    </view>
+  </block>
+</view>

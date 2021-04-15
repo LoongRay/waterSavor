@@ -1,0 +1,164 @@
+<!--pages/line/card/card.wxml-->
+<view class="container">
+  <view class="line">
+    <view class="line_top">
+      <view class="sum_today">
+        <text>当天累计用水(m³)</text>
+        <view class="sum_today_val">22.54</view>
+      </view>
+      <view class="warn_msg">报警中心</view>
+    </view>
+    <view class="line_middle">
+      <view class="sum_detail btn">产线用水详情</view>
+      <view class="sum_compare btn">产能耗水对比</view>
+    </view>
+    <view class="line_bottom">
+      <view class="run_time bottom_item">
+        <view class="item_val">0.1H</view>
+        <view class="item_txt">当天运行时长</view>
+      </view>
+      <view class="saves_today bottom_item">
+        <view class="item_val">0m³</view>
+        <view class="item_txt">昨天省水效果</view>
+      </view>
+      <view class="saves_yesterday bottom_item">
+        <view class="item_val">0m³</view>
+        <view class="item_txt">当天省水效果</view>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <swiper autoplay="{{true}}" indicator-dots="{{indicatorDots}}">
+      <swiper-item>
+        <view class="content">
+          <view class="header">
+            <view>
+              <span class="header_name">显影水洗1 (4G9)</span>
+              <span class="header_state">在线</span>
+              <span class="header_history"><a>历史记录 ></a></span>
+            </view>
+            <view class="name">
+              省水器4G9
+            </view>
+          </view>
+          <view class="infobar">
+            <view class="bar_item">
+              <image class="item_icon" src="../../../imgs/icon/totaluse.png"></image>
+              <view class="item_text">当天累计用水</view>
+              <view class="item_val"><span>3.06  </span>m³</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon purple" src="../../../imgs/icon/timelength.png"></image>
+              <view class="item_text">当天运行时长</view>
+              <view class="item_val"><span>12.3  </span>H</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/realtime.png"></image>
+              <view class="item_text">当前流量</view>
+              <view class="item_val"><span>4.18  </span>L/min</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/phval.png"></image>
+              <view class="item_text">PH值</view>
+              <view class="item_val"><span>-1  </span></view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon purple" src="../../../imgs/icon/phval.png"></image>
+              <view class="item_text">PH剩余校验时间</view>
+              <view class="item_val"><span>27  </span>天</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/todaysaves.png"></image>
+              <view class="item_text">当天省水效果</view>
+              <view class="item_val"><span>0  </span>m³</view>
+            </view>
+          </view>
+          <view class="infostate">
+            <view>
+              <view class="title">PH设置值</view>
+              <view>7.00-8.00<span></span></view>
+            </view>
+            <view class="phflow">
+              <view class="title">PH流量</view>
+              <view>4<span>L/min</span></view>
+            </view>
+            <view>
+              <view class="title">设置流量</view>
+              <view>4<span>L/min</span></view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="content">
+          <view class="header">
+            <view>
+              <span class="header_name">显影水洗1 (4G9)</span>
+              <span class="header_state">在线</span>
+              <span class="header_history"><a>历史记录 ></a></span>
+            </view>
+            <view class="name">
+              省水器4G9
+            </view>
+          </view>
+          <view class="infobar">
+            <view class="bar_item">
+              <image class="item_icon" src="../../../imgs/icon/totaluse.png"></image>
+              <view class="item_text">当天累计用水</view>
+              <view class="item_val"><span>3.06  </span>m³</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon purple" src="../../../imgs/icon/timelength.png"></image>
+              <view class="item_text">当天运行时长</view>
+              <view class="item_val"><span>12.3  </span>H</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/realtime.png"></image>
+              <view class="item_text">当前流量</view>
+              <view class="item_val"><span>4.18  </span>L/min</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/phval.png"></image>
+              <view class="item_text">PH值</view>
+              <view class="item_val"><span>-1  </span></view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon purple" src="../../../imgs/icon/phval.png"></image>
+              <view class="item_text">PH剩余校验时间</view>
+              <view class="item_val"><span>27  </span>天</view>
+            </view>
+            <view class="bar_item">
+              <image class="item_icon blue" src="../../../imgs/icon/todaysaves.png"></image>
+              <view class="item_text">当天省水效果</view>
+              <view class="item_val"><span>0  </span>m³</view>
+            </view>
+          </view>
+          <view class="infostate">
+            <view>
+              <view class="title">PH设置值</view>
+              <view>7.00-8.00<span></span></view>
+            </view>
+            <view class="phflow">
+              <view class="title">PH流量</view>
+              <view>4<span>L/min</span></view>
+            </view>
+            <view>
+              <view class="title">设置流量</view>
+              <view>4<span>L/min</span></view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="info">
+    <view class="info_online">
+      <view class="txt">在线台数/总台数</view>
+      <view class="val">1台/1台</view>
+    </view>
+    <view class="update_time">
+      <view class="txt">当前更新时间</view>
+      <view class="val">2021-04-09 14:44:17</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,137 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">加工点</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">省水器</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" style="height:{{clientHeight?clientHeight+'px':'auto'}}"
+    bindchange="bindChange">
+    <!-- 全部设备代码 -->
+    <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"
+            bindscrolltolower="scrollbot">
+            <div class="all">
+                <view class="allspot">
+                    <view class="header">
+                        <view class="title_item form_name">{{allspot.report_name}}</view>
+                        <view class="title_item">{{allspot.output_name}}</view>
+                        <view class="title_item">{{allspot.square_name}}</view>
+                        <view class="title_item">{{allspot.duration_name}}</view>
+                    </view>
+                    <view class="content" wx:for="{{allspot.report}}" wx:key="id" wx:for-index="index"
+                        wx:for-item="item"
+                        style="{{item.name=='近7日'?'border-bottom:none;':''}};{{item.name=='近7日'?'border-bottom-left-radius:30rpx;border-bottom-right-radius:30rpx;overflow:hidden;':''}}">
+                        <view class="date" style="{{item.name=='今日'?'color:#04B8E8;':''}};">{{item.name}}</view>
+                        <view class="val" style="{{item.name=='今日'?'color:#04B8E8;':''}};">
+                            <view class="val_total">
+                                <view class="item_tips">{{item.list.total.name}}</view>
+                                <view class="item">{{item.list.total.output}}</view>
+                                <view class="item">{{item.list.total.square}}</view>
+                                <view class="item">{{item.list.total.duration}}</view>
+                            </view>
+                            <view class="val_avg">
+                                <view class="item_tips">{{item.list.avg.name}}</view>
+                                <view class="item">{{item.list.avg.output}}</view>
+                                <view class="item">{{item.list.avg.square}}</view>
+                                <view class="item">{{item.list.avg.duration}}</view>
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+                <view class="equipinfo">
+                    <view class="device-header">
+                        <view class="title_item">{{allspot.device_text.device_name}}</view>
+                        <view class="title_item">{{allspot.device_text.output_name}}</view>
+                        <view class="title_item">{{allspot.device_text.square_name}}</view>
+                        <view class="title_item">{{allspot.device_text.duration_name}}</view>
+                        <view class="title_item">{{allspot.device_text.utilization_rate_name}}</view>
+                    </view>
+                    <view class="device_info" wx:for="{{allspot.device}}" wx:for-item="item" wx:key="id"
+                        wx:index-item="index">
+                        <view class="info_item">{{item.name}}</view>
+                        <view class="info_item">{{item.output}}</view>
+                        <view class="info_item">{{item.square}}</view>
+                        <view class="info_item">{{item.duration}}</view>
+                        <view class="info_item">{{item.utilization_rate_value}}</view>
+                    </view>
+                </view>
+            </div>
+        </scroll-view>
+    </swiper-item>
+    <!-- 加工点代码 -->
+    <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"
+            bindscrolltolower="scrollbot">
+            <div class="all">
+                <view class="allspot">
+                    <view class="header">
+                        <view class="title_item form_name">{{prodspot.report_name}}</view>
+                        <view class="title_item">{{prodspot.output_name}}</view>
+                        <view class="title_item">{{prodspot.square_name}}</view>
+                        <view class="title_item">{{prodspot.duration_name}}</view>
+                    </view>
+                    <view class="content" wx:for="{{prodspot.report}}" wx:key="id" wx:for-index="index"
+                        wx:for-item="item"
+                        style="{{item.name=='近7日'?'border-bottom:none;':''}};{{item.name=='近7日'?'border-bottom-left-radius:30rpx;border-bottom-right-radius:30rpx;overflow:hidden;':''}}">
+                        <view class="date" style="{{item.name=='今日'?'color:#04B8E8;':''}};">{{item.name}}</view>
+                        <view class="val" style="{{item.name=='今日'?'color:#04B8E8;':''}};">
+                            <view class="val_total">
+                                <view class="item_tips">{{item.list.total.name}}</view>
+                                <view class="item">{{item.list.total.output}}</view>
+                                <view class="item">{{item.list.total.square}}</view>
+                                <view class="item">{{item.list.total.duration}}</view>
+                            </view>
+                            <view class="val_avg">
+                                <view class="item_tips">{{item.list.avg.name}}</view>
+                                <view class="item">{{item.list.avg.output}}</view>
+                                <view class="item">{{item.list.avg.square}}</view>
+                                <view class="item">{{item.list.avg.duration}}</view>
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+                <view class="equipinfo">
+                    <view class="device-header">
+                        <view class="title_item">{{prodspot.device_text.device_name}}</view>
+                        <view class="title_item">{{prodspot.device_text.output_name}}</view>
+                        <view class="title_item">{{prodspot.device_text.square_name}}</view>
+                        <view class="title_item">{{prodspot.device_text.duration_name}}</view>
+                        <view class="title_item">{{prodspot.device_text.utilization_rate_name}}</view>
+                    </view>
+                    <view class="device_info" wx:for="{{prodspot.device}}" wx:for-item="item" wx:key="id"
+                        wx:index-item="index">
+                        <view class="info_item">{{item.name}}</view>
+                        <view class="info_item">{{item.output}}</view>
+                        <view class="info_item">{{item.square}}</view>
+                        <view class="info_item">{{item.duration}}</view>
+                        <view class="info_item">{{item.utilization_rate_value}}</view>
+                    </view>
+                </view>
+            </div>
+        </scroll-view>
+    </swiper-item>
+    <!-- 省水器代码 -->
+    <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"
+            bindscrolltolower="scrollbot">
+            <!-- 使用block循环渲染代码 -->
+            <block wx:for="{{water_save.list}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+                <view class="water_line">
+                    <view class="count">
+                        <view class="count_num">{{item.machine_num}}</view>
+                        <view class="line_name">{{item.name}}</view>
+                    </view>
+                    <view class="descript">
+                        <view class="line_name">{{item.name}}</view>
+                        <view class="sum_use">总用水(当天):{{item.content[0].value}}</view>
+                        <view class="relycop">所属公司:{{item.content[1].value}}</view>
+                        <view class="update_time">更新时间: {{item.last_update_value}} </view>
+                    </view>
+                </view>
+            </block>
+
+        </scroll-view>
+    </swiper-item>
+</swiper>

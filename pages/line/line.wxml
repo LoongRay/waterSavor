@@ -1,0 +1,14 @@
+<block wx:for="{{lineData}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+  <view class="water_line">
+    <view class="count">
+      <view class="count_num">{{item.equip_num}}</view>
+      <view class="line_name">{{item.line_name}}</view>
+    </view>
+    <view class="descript">
+      <view class="line_name">{{item.line_name}}</view>
+      <view class="sum_use">总用水(当天):{{item.sum_use}}m³</view>
+      <view class="relycop">所属公司:{{item.relycop}}</view>
+      <view class="update_time">更新时间: {{item.update_time}} </view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,52 @@
+/* pages/scan/scan.wxss */
+.container{
+  text-align: center;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container .bg_img{
+  height: 572rpx;
+  padding: 34rpx 72rpx 0 72rpx;
+  width: 606rpx;
+}
+
+.container .title{
+  margin-top: 80rpx;
+  font-size: 42rpx;
+  font-weight: bolder;
+}
+
+.container .tips{
+  width: 450rpx;
+  margin: 30rpx auto;
+  color: rgb(160, 154, 154);
+  font-size: 30rpx;
+}
+
+.container .btn{
+  background-color:#21a4e1;
+  color: #fff;
+  padding: 20rpx;
+  width: 410rpx;
+  border-radius: 40rpx;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.container .btn image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-left: 90rpx;
+}
+
+.container .btn .btn_txt{
+  font-size: 36rpx;
+  line-height: 60rpx;
+}

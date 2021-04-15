@@ -1,0 +1,66 @@
+<view wx:if="{{showMainPanel}}" class="root-flex bg-c-white">
+    <view>
+        <image src="../../assets/images/pcbbao.svg" style="height: 350rpx;width: 100%"></image>
+    </view>
+    <view class="flex-1">
+        <view class="item flex">
+            <image src="../../assets/images/login_name.png" style="width: 82rpx;height: 82rpx;"></image>
+            <input placeholder="请输入手机号码" class="flex-1 m-left-24 font-s-32 font-c-333" style="min-height: 88rpx;"
+                   type="number"
+                   value="{{info}}"
+                   data-type="0" bindblur="insertText" bindinput="insertText"/>
+        </view>
+        <view class="item flex m-top-12 align-items-center">
+            <image src="../../assets/images/login_pwd.png" style="width: 82rpx;height: 82rpx;"></image>
+            <input placeholder="请输入验证码" class="flex-1 m-left-24 font-s-32 font-c-333" style="min-height: 88rpx;"
+                   type="number" maxlength="8" value="{{info}}"
+                   data-type="1" bindblur="insertText" bindinput="insertText"/>
+            <!--     点击验证码       -->
+            <view wx:if="{{restSecond==60}}" class="font-s-28 font-c-white flex align-items-center justify-content-center m-right-24 m-top-2"
+                  style="background-color:#56b9f5;width: 168rpx;height: 50rpx;border-radius: 8rpx;" bindtap="enterPage"
+                  data-type="4">
+                <view>获取验证码</view>
+            </view>
+            <!--     倒计时       -->
+            <view wx:else class="font-s-28 font-c-white flex align-items-center justify-content-center m-right-24 m-top-2"
+                  style="background-color:#d1d1d1;width: 168rpx;height: 50rpx;border-radius: 8rpx;">
+                <view>{{restSecond}} 秒</view>
+            </view>
+        </view>
+        <view class="flex justify-content-center flex-direction-column" style="margin-top: 50rpx;">
+            <view class="flex justify-content-center">
+                <view class="btn-login flex-1" bindtap="enterPage" data-type="1">登 录</view>
+            </view>
+            <view bindtap="enterPage" data-type="5" class="flex justify-content-center" style="position: relative;"> 
+                <image style="width:45rpx;height:35rpx;position: absolute;top: 50rpx;z-index: 1;left: 220rpx;" src="../../assets/images/weixinLogo.png"></image>
+                <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"  class="btn-login-by-phone  flex-1">微信授权登录</button>
+            </view>
+            <view class="flex justify-content-center text-align-center" bindtap="enterPage" data-type="2">
+                    <view  class="btn-login-as-trial flex-1">免费体验</view>
+            </view>
+
+            <!-- <view class="flex justify-content-space-between" style="margin-left: 48rpx;margin-right: 48rpx;">
+                <view class="flex justify-content-center m-top-24">
+                    <view class="font-c-blue font-s-28 p-top-12 p-bottom-12" bindtap="enterPage" data-type="2">免费体验
+                    </view>
+                </view>
+                <view class="flex justify-content-center m-top-24">
+                    <view class="font-c-blue font-s-28 p-top-12 p-bottom-12" bindtap="enterPage" data-type="3">密码登录
+                    </view>
+                </view>
+            </view> -->
+            <!--            <view class="flex justify-content-center" style="margin-top: 66rpx;margin-bottom: 44rpx;">-->
+            <!--                <view class="flex align-items-center">-->
+            <!--                    <view class="sperate"></view>-->
+            <!--                </view>-->
+            <!--                <view class="font-s-28 font-c-999 m-left-24 m-right-24">或</view>-->
+            <!--                <view class="flex align-items-center">-->
+            <!--                    <view class="sperate"></view>-->
+            <!--                </view>-->
+            <!--            </view>-->
+
+        </view>
+    </view>
+</view>
+<van-notify id="van-notify"/>
+<include src="../templates/mainFrame.wxml"/>

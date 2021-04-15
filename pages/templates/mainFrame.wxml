@@ -1,0 +1,31 @@
+<view wx:if="{{showEmptyPanel}}" class="emptyView bg-c-white">
+    <icon type="warn" size="80" color="lightgray"/>
+    <text class="font-s-30 font-c-333" style="margin-top: 40rpx;">暂无数据</text>
+    <text class="font-s-28 font-c-666" style="margin-top: 20rpx;">更多内容请到相关官网查询</text>
+</view>
+<view wx:if="{{showErrorPanel}}" class="emptyView bg-c-white">
+    <icon type="warn" size="80" color="lightgray"/>
+    <text wx:if="{{errorMsgContent}}" style="margin-top: 48rpx;margin-bottom: 24rpx;" class="font-c-666 font-s-28">
+        {{errorMsgContent}}
+    </text>
+    <text wx:else style="margin-top: 48rpx;margin-bottom: 24rpx;" class="font-c-666 font-s-28">加载失败，请稍后再试试吧</text>
+    <!--<text wx:if="{{!hideContact}}" style="margin: 24rpx 24rpx 48rpx;" class="font-c-999 font-s-28">你也可以拨打客服电话。</text>-->
+    <view class="root-block" style="width: 100%;">
+        <view wx:if="{{!hideRefresh}}" catchtap="refreshUrl" class="btn-primary" style="margin-top: 48rpx;"
+              hover-class="cell-active" hover-stay-time="150" bindtap="login">刷 新
+        </view>
+        <view wx:if="{{!hideRollBack}}" catchtap="rollBack" class="btn-primary" style="margin-top: 48rpx;"
+              hover-class="cell-active" hover-stay-time="150" bindtap="login">返 回
+        </view>
+        <!--<button wx:if="{{!hideContact}}" catchtap="telContact" hover-class="button-hover" class="bg-c-white font-c-green font-s-30 btn-load">联系客服</button>-->
+    </view>
+</view>
+<view wx:if="{{showNoLoginPanel}}" class="emptyView bg-c-white">
+    <icon type="warn" size="80" color="lightgray"/>
+    <text style="margin-top: 48rpx;margin-bottom: 24rpx;" class="font-c-666 font-s-28">暂未登录，无法体验功能</text>
+    <view class="root-block" style="width: 100%;">
+        <view catchtap="enterLogin" class="btn-primary" style="margin-top: 48rpx;" hover-class="cell-active"
+              hover-stay-time="150" bindtap="login">登 录
+        </view>
+    </view>
+</view>

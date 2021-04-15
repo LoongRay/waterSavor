@@ -1,0 +1,32 @@
+/* pages/equip/equip.wxss */
+.category_item{
+  background-color: #fff;
+  display: flex;
+  height: 160rpx;
+  border-bottom: 20rpx solid #eee;
+}
+
+.category_item .item_count{
+  text-align: center;
+  width: 30%;
+  margin-top: 30rpx;
+
+}
+
+.category_item .count_title{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #1296db;
+}
+
+.category_item .count_num{
+  color: #1296db;
+  font-size: 36rpx;
+  font-weight: 800;
+}
+
+.category_item .category_title{
+  text-align: center;
+  line-height: 160rpx;
+  width: 70%;
+}

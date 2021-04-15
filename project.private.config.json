@@ -1,0 +1,76 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "line",
+          "pathName": "pages/line/line",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/line/card/card",
+          "pathName": "pages/line/card/card",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "设备分类",
+          "pathName": "pages/equip/equip",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "card",
+          "pathName": "pages/line/card/card",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "scan",
+          "pathName": "pages/scan/scan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "form报表",
+          "pathName": "pages/form/form",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "login",
+          "pathName": "pages/authModule/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "loginByC",
+          "pathName": "pages/authModule/loginByIC",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "成员",
+          "pathName": "pages/member/member",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "test",
+          "pathName": "pages/test/test",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

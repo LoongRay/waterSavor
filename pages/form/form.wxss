@@ -1,0 +1,252 @@
+.container{
+  background-color: #eee;
+}
+
+/* 顶部tab切换 */
+.swiper-tab{
+  /* 顶部tab固定 */
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  z-index: 9;
+}
+.swiper-tab-list{  
+  font-size: 30rpx;
+  font-weight: bolder;
+  display: inline-block;
+  width: 16.33%;
+  color: #777777;
+}
+.on{ 
+  color: #04B8E8;
+  border-bottom: 3rpx solid #04B8E8;
+}
+
+.swiper-box{ 
+  padding-top: 100rpx;
+  /* display: block; 
+  height: 100%;  */
+  width: 100%; 
+}
+
+.swiper-box swiper-item{
+  text-align: center;
+}
+
+/* 全部加工点统计 */
+.allspot .header{
+  display: flex;
+  height: 100rpx;
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.header .title_item{
+  line-height: 100rpx;
+  font-size: 26rpx;
+  width: 23.33%;
+}
+
+.header .form_name{
+  width: 30%;
+  background-color: #04B8E8;
+  border-top-left-radius: 30rpx;
+}
+
+.header .title_item:nth-of-type(2){
+  background-color: #70C6EC;
+}
+
+.header .title_item:nth-of-type(3){
+  background-color: #94D5F2;
+}
+
+.header .title_item:nth-of-type(4){
+  background-color: #A5DAF2;
+  border-top-right-radius: 30rpx;
+}
+
+.content{
+  display: flex;
+  height: 140rpx;
+  width: 90%;
+  margin: 0px auto;
+  font-size: 26rpx;
+  padding-bottom: 1px;
+  border-bottom:1px solid rgb(187, 186, 186);
+  box-shadow: 5px 5px 5px rgb(192, 189, 189);
+}
+.content .date{
+  width:18%;
+  line-height: 140rpx;
+  background-color: rgb(233, 242, 253);
+}
+.content .val{
+  width: 82%;
+  font-size: 22rpx;
+}
+.content .val .val_total,
+.content .val .val_avg{
+  background-color: #fff;
+  line-height: 70rpx;
+  display: flex;
+  width: 100%;
+}
+
+.content .val .val_avg{
+  border-top:1px solid rgb(187, 186, 186);
+}
+
+.val_total .item_tips,
+.val_avg .item_tips{
+  width: 15%;
+}
+
+.val_total .item,
+.val_avg .item{
+  width: 28.33%;
+}
+
+/* 设备表格 */
+.equipinfo{
+  padding-bottom: 50rpx;
+}
+
+.equipinfo .device-header{
+  display: flex;
+  height: 70rpx;
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  justify-content: space-around;
+  font-size: 26rpx;
+  background-color: #04B8E8;
+  color: #fff;
+  line-height: 70rpx;
+  border-top-left-radius:30rpx;
+  border-top-right-radius:30rpx;
+}
+
+.equipinfo .device-header .title_item:nth-of-type(1){
+  flex: 26%;
+}
+.equipinfo .device-header .title_item:nth-of-type(2){
+  background-color: #70C6EC;
+  flex: 18.5%;
+}
+.equipinfo .device-header .title_item:nth-of-type(3){
+  background-color: #94D5F2;
+  flex: 18.5%;
+}
+.equipinfo .device-header .title_item:nth-of-type(4){
+  background-color: #A5DAF2;
+  flex: 18.5%;
+}
+.equipinfo .device-header .title_item:nth-of-type(5){
+  background-color: #70C6EC;
+  flex: 18.5%;
+  border-top-right-radius:30rpx;
+}
+
+.equipinfo .device_info{
+  display: flex;
+  height: 70rpx;
+  background-color: #fff;
+  line-height: 70rpx;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  font-size: 22rpx;
+  border-bottom: 1px solid rgb(187, 186, 186);
+}
+
+.device_info .info_item:nth-of-type(1){
+  flex: 26%;
+}
+
+.device_info .info_item:nth-of-type(2){
+  flex: 18.5%;
+}
+.device_info .info_item:nth-of-type(3){
+  flex: 18.5%;
+}
+.device_info .info_item:nth-of-type(4){
+  flex: 18.5%;
+}
+.device_info .info_item:nth-of-type(5){
+  flex: 18.5%;
+}
+
+/* 省水器样式 */
+/* pages/line/line.wxss */
+.water_line{
+  display: flex;
+  width: 90%;
+  height: 250rpx;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 10rpx;
+}
+
+.water_line .count{
+  color: #04B8E8;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  margin-top: 52rpx; 
+}
+
+.water_line .count .count_num{
+  font-size: 36rpx;
+  font-weight: 800;
+}
+
+.water_line .count .line_name{
+  width: 140rpx;
+  margin: 0 auto;
+  font-size: 26rpx;
+}
+
+
+.water_line .descript{
+  width: 70%;
+  height: 100%;
+  margin-top: 36rpx;
+  color: #333;
+  text-align: left;
+}
+
+.water_line .descript .line_name{
+  font-size: 30rpx;
+}
+
+.water_line .descript .sum_use{
+  margin-top: 12rpx;
+  font-size: 22rpx;
+  color: rgba(155, 141, 141, 0.692);
+}
+
+.water_line .descript .relycop{
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: rgba(155, 141, 141, 0.692);
+
+}
+
+.water_line .descript .update_time{
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: rgba(155, 141, 141, 0.692);
+}

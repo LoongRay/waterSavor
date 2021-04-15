@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header">
+    <view class="company">广州裕申电子科技有限公司</view>
+  </view>
+  <view class="content">
+    <view class="member_info" wx:for="{{member}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+        <view class="user_icon" >
+          <image src="../../assets/images/members.png"></image>
+        </view>
+        <view class="text_info">
+          <view class="name">{{item.name}}</view>
+          <view class="phone">电话: {{item.phone}}</view>
+          <view class="email">邮箱: {{item.email}}</view>
+          <view class="company">所属公司: {{item.company}}</view>
+        </view>
+    </view>
+  </view>
+</view>

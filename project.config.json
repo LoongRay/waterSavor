@@ -1,0 +1,119 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": false,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": true,
+		"useApiHook": true,
+		"useApiHostProcess": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enableEngineNative": false,
+		"bundle": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"userConfirmedBundleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.16.0",
+	"appid": "wx38f18ce44a602f37",
+	"projectname": "%E4%BA%91%E6%99%BA%E9%80%A0_%E8%83%BD%E8%80%97",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"name": "line",
+					"pathName": "pages/line/line",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/line/card/card",
+					"pathName": "pages/line/card/card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "设备分类",
+					"pathName": "pages/equip/equip",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "card",
+					"pathName": "pages/line/card/card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "scan",
+					"pathName": "pages/scan/scan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "form报表",
+					"pathName": "pages/form/form",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "login",
+					"pathName": "pages/authModule/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "loginByC",
+					"pathName": "pages/authModule/loginByIC",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "成员",
+					"pathName": "pages/member/member",
+					"scene": null
+				}
+			]
+		}
+	}
+}

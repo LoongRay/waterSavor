@@ -1,0 +1,28 @@
+<view wx:if="{{showMainPanel}}" class="root-flex bg-c-white">
+    <view>
+        <image src="../../assets/images/pcbbao.svg" style="height: 350rpx;width: 100%"></image>
+    </view>
+    <view class="flex-1">
+        <view class="item flex">
+            <image src="../../assets/images/login_name.png" style="width: 82rpx;height: 82rpx;"></image>
+            <input placeholder="请输入账号" class="flex-1 m-left-24 font-s-32 font-c-333" style="min-height: 88rpx;"
+                   type="text"
+                   value="{{info}}"
+                   data-type="0" bindblur="insertText" bindinput="insertText"/>
+        </view>
+        <view class="item flex m-top-12 align-items-center">
+            <image src="../../assets/images/login_pwd.png" style="width: 82rpx;height: 82rpx;"></image>
+            <input placeholder="请输入密码" class="flex-1 m-left-24 font-s-32 font-c-333" style="min-height: 88rpx;"
+                   type="password" value="{{info}}"
+                   data-type="1" bindblur="insertText" bindinput="insertText"/>
+
+        </view>
+        <view class="flex justify-content-center flex-direction-column" style="margin-top: 50rpx;">
+            <view class="flex justify-content-center">
+                <view class="btn-login flex-1" bindtap="enterPage" data-type="1">登 录</view>
+            </view>
+        </view>
+    </view>
+</view>
+<van-notify id="van-notify"/>
+<include src="../templates/mainFrame.wxml"/>

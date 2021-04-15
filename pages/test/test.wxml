@@ -1,0 +1,28 @@
+<!-- 轮播图 -->
+<view class="swiper-tab">
+  <!-- 判断currentTab的值,通过判定值确定是否使用on类名 -->
+  <!-- on类名设置了蓝色下划线 和 字体样式 -->
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">加工点</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" style="height:{{clientHeight?clientHeight+'px':'auto'}}"
+  bindchange="bindChange">
+  <swiper-item>
+    <!-- swiper-item标签下增加scroll-view标签,该标签用于放置需要被滚动的内容 -->
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"
+      bindscrolltolower="scrollbot">
+      <!-- view标签中放置的是需要被滚动的内容 -->
+      <view>
+        <view style="background-color:green;width=100%;height:500rpx;">1</view>
+        <view style="background-color:red;width=100%;height:500rpx;">1</view>
+        <view style="background-color:black;width=100%;height:500rpx;">1</view>
+        <view style="background-color:yellow;width=100%;height:500rpx;">1</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <view>2</view>
+  </swiper-item>
+</swiper>

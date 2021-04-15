@@ -1,0 +1,16 @@
+.emptyView{
+    height: 100%;
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120rpx;
+}
+.btn-load{
+    width: 90%;
+    margin: 16rpx;
+}
+.button-hover{
+    background-color: lightgray;
+    opacity: 0.3;
+}

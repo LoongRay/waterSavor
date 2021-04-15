@@ -1,0 +1,28 @@
+@import "../templates/mainFrame.wxss";
+
+.item{
+    border-bottom: 3rpx solid #e5e5e5;
+    margin-left: 44rpx;
+    margin-right: 44rpx;
+}
+
+.btn-login{
+    background-color: #21A4E1;
+    font-size: 34rpx;
+    height: 90rpx;
+    margin-left: 48rpx;
+    margin-right: 48rpx;
+    display: flex;
+    border-radius: 12rpx;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 40rpx;
+}
+
+
+.sperate{
+    width: 134rpx;
+    height: 2rpx;
+    background-color: #e5e5e5;
+}

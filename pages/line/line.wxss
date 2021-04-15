@@ -1,0 +1,56 @@
+/* pages/line/line.wxss */
+.water_line{
+  display: flex;
+  height: 250rpx;
+  border-bottom: 30rpx solid #eee;
+}
+
+.water_line .count{
+  color: #04B8E8;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  margin-top: 52rpx; 
+}
+
+.water_line .count .count_num{
+  font-size: 36rpx;
+  font-weight: 800;
+}
+
+.water_line .count .line_name{
+  width: 140rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+
+
+.water_line .descript{
+  width: 70%;
+  height: 100%;
+  margin-top: 36rpx;
+  color: #333;
+}
+
+.water_line .descript .line_name{
+  font-size: 34rpx;
+}
+
+.water_line .descript .sum_use{
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: rgba(155, 141, 141, 0.692);
+}
+
+.water_line .descript .relycop{
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: rgba(155, 141, 141, 0.692);
+
+}
+
+.water_line .descript .update_time{
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: rgba(155, 141, 141, 0.692);
+}

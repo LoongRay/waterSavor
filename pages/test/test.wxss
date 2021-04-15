@@ -1,0 +1,38 @@
+/* pages/test/test.wxss */
+/* 顶部tab切换 */
+.swiper-tab{
+  /* 顶部tab固定 */
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  z-index: 9;
+}
+.swiper-tab-list{  
+  font-size: 30rpx;
+  font-weight: bolder;
+  display: inline-block;
+  width: 16.33%;
+  color: #777777;
+}
+.on{ 
+  color: #04B8E8;
+  border-bottom: 3rpx solid #04B8E8;
+}
+
+.swiper-box{ 
+  padding-top: 100rpx;
+  /* display: block; 
+  height: 100%;  */
+  width: 100%; 
+}
+
+.swiper-box swiper-item{
+  text-align: center;
+}

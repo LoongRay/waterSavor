@@ -1,0 +1,59 @@
+/* pages/member/member.wxss */
+.container{
+  position: relative;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.container .header{
+  background-color: #04B8E8;
+  width: 100%;
+  height: 300rpx;
+}
+.container .header{
+  text-align: center;
+  color: #fff;
+}
+.container .header .company{
+  padding-top: 90rpx;
+}
+
+.container .content{
+  position: absolute;
+  width: 100%;
+  top: 200rpx;
+}
+
+.container .content .member_info .user_icon image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 40rpx;
+}
+.container .content .member_info{
+  display: flex;
+  width: 94%;
+  height: 220rpx;
+  background-color: #fff;
+  border-radius: 32rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 22rpx;
+  color: rgb(141, 139, 139);
+  margin-bottom: 20rpx;
+}
+
+.container .content .member_info .text_info view{
+  margin-bottom: 10rpx;
+}
+
+.container .content .member_info .text_info .name{
+  font-size: 28rpx;
+  color: #333;
+}
